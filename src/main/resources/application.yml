@@ -18,7 +18,6 @@ spring:
 
     nacos:
       discovery:
-        #server-addr: 192.168.0.201:8848
         server-addr: http://localhost:8848
 
 
