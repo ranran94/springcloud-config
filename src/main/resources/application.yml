@@ -1,1 +1,24 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ranran94/springcloud-config.git #注册中心git地址
+
+          ### 搜索目录
+          search-paths:
+            - springCloud-Study
+          #### 读取分支
+          label: master
+
+    nacos:
+      discovery:
+        #server-addr: 192.168.0.201:8848
+        server-addr: http://localhost:8848
+
 
